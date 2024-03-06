@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <audio id="hover-sound" src="/shooting-sound-fx-159024.mp3" preload="auto"></audio>
+    <audio id="hover-sound2" src="/click-button-131479.mp3" preload="auto"></audio>
+    <div id="calc">
+        <input id="display" type="display" >
+        <br>
+        <br>
+        
+        <div id="btn">
+            
+            <button class="my-button" id="operator" onclick="appendIn('+')">+</button>
+            <button class="my-button"  onclick="appendIn('7')">7</button>
+            <button class="my-button" onclick="appendIn('8')">8</button>
+            <button class="my-button" onclick="appendIn('9')">9</button>
+            <br>
+
+            <button class="my-button" id="operator" onclick="appendIn('-')">-</button>
+            <button class="my-button" onclick="appendIn('4')">4</button>
+            <button class="my-button" onclick="appendIn('5')">5</button>
+            <button class="my-button" onclick="appendIn('6')">6</button>
+            <br>
+
+            <button class="my-button" id="operator" onclick="appendIn('*')">×</button>
+            <button class="my-button" onclick="appendIn('1')">1</button>
+            <button class="my-button" onclick="appendIn('2')">2</button>
+            <button class="my-button" onclick="appendIn('3')">3</button>
+            <br>
+
+            <button class="my-button" id="operator" onclick="appendIn('/')">÷</button>
+            <button class="my-button" onclick="appendIn('0')">0</button>
+            <button class="my-button" onclick="appendIn('.')">.</button>
+
+            <button class="my-button" id="operator" onclick="Calculate('=')">=</button>
+
+            <br>
+            <button class="my-button" id="operator" onclick="clearDisplay('C')">C</button>
+            
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
