@@ -16,10 +16,15 @@ function clearDisplay(){
     display.value="";
 }
 function Calculate(){
+
     try{
     display.value=eval(display.value);
     }
     catch(error){
+        
+        display.value="Error";
+    }
+    if(display.value=="function Error() { [native code] }"){
         display.value="Error";
     }
 }
