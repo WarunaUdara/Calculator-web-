@@ -6,7 +6,11 @@ function appendIn(input){
     if (display.value=="Error") {
         display.value="";
     }
+    if (display.value=="undefined") {
+        display.value="";
+    }
     display.value+=input;
+    
 }
 function clearDisplay(){
     display.value="";
